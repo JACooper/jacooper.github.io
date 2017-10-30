@@ -14,74 +14,94 @@
 		<section id='landing'>
 			<img id='logo' src='./dist/logo.png' alt='logo'/>
 			<h2 id='landing-title'>Jesse Cooper</h3>
-			<h3 id='landing-subtitle'>Web developer. Makes things for humans.</h3>
+			<h3 id='landing-subtitle'>Web developer. Creating for humans.</h3>
 			<div class='row'>
-				<div class='col-4'>
-					<h3 class='landing-header'>Languages</h3>
+				<div class='col-4 landing-item'>
+					<img src='./dist/languages.png' alt=''/>
+					<h3 class='landing-list-header'>Languages</h3>
 					<ul class='landing-list'>
 						<li>Node</li>
 						<li>Javascript (ES6)</li>
 						<li>HTML</li>
 						<li>CSS/SCSS/LESS</li>
+						<li>C#</li>
 					</ul>
 				</div>
-				<div class='col-4'>
-					<h3 class='landing-header'>Frameworks</h3>
+				<div class='col-4 landing-item'>
+					<img src='./dist/libraries.png' alt=''/>
+					<h3 class='landing-list-header'>Frameworks</h3>
 					<ul class='landing-list'>
 						<li>React</li>
 						<li>Redux</li>
 						<li>Express</li>
+						<li>Mongoose/MongoDB</li>
 						<li>SocketIO</li>
 					</ul>
 				</div>
-				<div class='col-4'>
-					<h3 class='landing-header'>Tools & tech</h3>
+				<div class='col-4 landing-item'>
+					<img src='./dist/toolbox.png' alt=''/>
+					<h3 class='landing-list-header'>Tools & tech</h3>
 					<ul class='landing-list'>
 						<li>Webpack</li>
 						<li>git</li>
 						<li>npm</li>
-						<li>MongoDB</li>
+						<li>Heroku</li>
 					</ul>
 				</div>
 			</div>
-			<!-- Project jumper here -->
+
+			<div class='page-jump-container'>
+				<div id='page-jump'>
+					<div>v Projects & Contact v</div>
+				</div>
+			</div>
 		</section>
 
 		<section id='projects'>
 			<h2 id='project-header'>Projects</h2>
 			<section id='forge' class='row project'>
 				<div class='col-6 project-description'>
-					<h3>Forge</h3>
-					<p>A task tracking application that tackles the problem of unequal task weighting, while not compromising on simple, easy workflows. Each task is assigned difficulties for time, effort, and focus, and these are used to sort tasks intelligently to a user's given needs at the time. Equal parts passion project, personal challenge, and excuse to learn new things.</p>
+					<h3 class='project-title'>Forge</h3>
+					<p>A task tracking application that tackles the problem of unequal task weighting, while not compromising on simple, fast workflows. Each task is assigned difficulties in terms of time, effort, and focus, and these are used to sort tasks intelligently to a user's needs at any given time. Equal parts passion project and opportunity to learn.</p>
 					<p>Solo project. ES6, React, Redux, Express, Mongo.</p>
+
+					<a class='project-link' href='https://forgetracker.herokuapp.com/'>Try it!</a>
+					<a class='project-link' href='https://github.com/JACooper/Forge'>View source (server)</a>
+					<a class='project-link' href='https://github.com/JACooper/Forge-client'>View source (client)</a>
 				</div>
 
 				<div class='col-6 project-image'>
-					<img src='project-img.png' alt='image'/>
+					<img src='./dist/forge.png' alt='forge'/>
 				</div>
 			</section>
 
 			<section id='boardroom' class='row project'>
 				<div class='col-6 project-image'>
-					<img src='project-img.png' alt='image'/>
+					<img src='./dist/boardroom.png' alt='image'/>
 				</div>
 
 				<div class='col-6 project-description'>
-					<h3>Boardroom</h3>
-					<p>Group project with my friend <a href='http://aaronromel.com/'>Aaron</a>. Boardroom came from our experiences working in small teams and was out solution to wanting the convenience of real-time messaging, but also the flexibility of a white board.</p>
-					<p>ES6, Express, Websockets.</p>
+					<h3 class='project-title'>Boardroom</h3>
+					<p>Group project with my friend <a href='http://aaronromel.com/'>Aaron</a>. Boardroom came from our experiences working in small teams and was our solution to wanting the convenience of real-time messaging apps, but also the flexibility of a white board.</p>
+					<p>ES6, React, Express, Websockets.</p>
+
+					<a class='project-link' href='https://boardroom.herokuapp.com/'>Try it!</a>
+					<a class='project-link' href='https://github.com/aromel88/boardroom'>View source</a>
 				</div>
 			</section>
 
 			<section id='roadsign' class='row project'>
 				<div class='col-6 project-description'>
-					<h3>Roadsign</h3>
+					<h3 class='project-title'>Roadsign</h3>
 					<p>API mashup project for a class. Uses to <a href="https://developers.google.com/maps/documentation/directions/">Google Maps</a> & <a href="http://www.mygasfeed.com/keys/intro">MyGasFeed</a> to find a list of nearest gas stations every so often (user specified) along a Google Maps route. (NOTE: project is not actively maintained, so changes to/discontinued service of the APIs above may result in the app not working.)</p>
-					<p>Solo project. ES5, NodeJS. API requests routed through server, parsed on client.</p>
+					<p>Solo project. ES5, Node. API requests routed through server, parsed on client.</p>
+					
+					<a class='project-link' href='https://roadsign.herokuapp.com/'>Try it!</a>
+					<a class='project-link' href='https://github.com/JACooper/roadsign'>View source</a>
 				</div>
 
 				<div class='col-6 project-image'>
-					<img src='project-img.png' alt='image'/>
+					<img src='./dist/roadsign.png' alt='image'/>
 				</div>
 			</section>
 		</section>
@@ -89,7 +109,7 @@
 		<section id='about'>
 			<div class='row'>
 				<h2 id='about-header'>About me</h2>
-				<p class='about-content'>Hi, I'm Jesse. I recently graduated from the Rochester Institute of Technology with a BS in Game Design & Development and a minor in Computer Science. I've always loved tinkering with systems, seeing how they work, and modifying them, and programming has proven to be the most rewarding avenue for that curiosity by far. Currently I'm focusing on NodeJS and web technologies, as I've come to love the tao - and idiosyncrasies - of those systems, on both ends of the stack.</p>
+				<p class='about-content'>Hi, I'm Jesse. I recently graduated from the Rochester Institute of Technology with a BS in Game Design & Development and a minor in Computer Science. I've always loved tinkering with systems, seeing how they work, and modifying them, and programming has proven to be the most rewarding avenue for that curiosity by far. Currently I'm focusing on Node and web technologies, as I've come to love the tao - and idiosyncrasies - of those systems, across the stack.</p>
 
 				<p class='about-content'>In my personal time, I enjoy teaching, hiking, playing strategy games (digital and analog), and learning new languages and programming skills.</p>
 			</div>
@@ -97,6 +117,16 @@
 
 		<section id='footer'>
 			<div class='row'>
+				<h2 id='footer-title'>Feel free to get in touch below!</h2>
+				<div class='col-4 footer-link'>
+					<a class='footer-link-icon' href='https://github.com/JACooper'><img src='./dist/github.png' alt='github'/></a>
+				</div>
+				<div class='col-4 footer-link'>
+					<a class='footer-link-icon' href='./dist/resume.pdf'><img src='./dist/resume.png' alt='resume'/></a>
+				</div>
+				<div class='col-4 footer-link'>
+					<a class='footer-link-icon' href='https://www.linkedin.com/in/jesseandcooper'><img src='./dist/linkedin.png' alt='linkedin'/></a>
+				</div>
 			</div>
 		</section>
 	</body>
