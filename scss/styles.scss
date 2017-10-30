@@ -85,6 +85,11 @@ a {
 	margin-bottom: 15px;
 	font-size: 26pt;
 	text-align: center;
+
+	@media screen and (max-width: $responsive-width) {
+		font-size: 20pt;
+	}
+
 }
 
 .landing-item {
