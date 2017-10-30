@@ -98,12 +98,25 @@ a {
 
 .landing-list-header {
 	font-size: 1.4em;
+
+	@media screen and (max-width: $responsive-width) {
+		font-size: 1.2em;
+	}
+
+	@media screen and (max-width: $sml-responsive-width) {
+		font-size: 12pt;
+	}
 }
 
 .landing-list {
 	margin-top: 5px;
 	font-size: 1.1em;
 	list-style-type: none;
+
+
+	@media screen and (max-width: $responsive-width) {
+		font-size: 10pt;
+	}
 }
 
 .page-jump-container {
