@@ -124,6 +124,10 @@ a {
 	height: 50px;
 	position: absolute;
 	bottom: 0;
+
+	@media screen and (max-width: $responsive-width) {
+		display: none;
+	}
 }
 
 #page-jump {
