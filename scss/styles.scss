@@ -1,0 +1,126 @@
+$primary-font: 'Montserrat', sans-serif;
+
+$accent-color: #008080;
+$light-text: rgba(255, 255, 255, 0.85);
+
+$logo-size: 100px;
+
+.col-1  { width : 8.33%; }
+.col-2  { width : 16.66%; }
+.col-3  { width : 25%; }
+.col-4  { width : 33.33%; }
+.col-5  { width : 41.66%; }
+.col-6  { width : 50%; }
+.col-7  { width : 58.33%; }
+.col-8  { width : 66.66%; }
+.col-9  { width : 75%; }
+.col-10 { width : 83.33%; }
+.col-11 { width : 91.66%; }
+.col-12 { width : 100%; }
+
+* {
+	margin  : 0;
+	padding : 0;
+}
+
+body {
+	font-family: $primary-font;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.row {
+	max-width: 1200px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#logo {
+	margin-top: 15%;
+	margin-left: calc(50% - calc(#{$logo-size} / 2));
+}
+
+#landing {
+	width: 100%;
+	height: 100vh;
+	background: url('../assets/hero.jpg') center center fixed;
+	background-size: cover;
+}
+
+#landing-title {
+	color: $light-text;
+	margin-top: 15px;
+	font-size: 30pt;
+	text-align: center;
+}
+
+#landing-subtitle {
+	color: $light-text;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 26pt;
+	text-align: center;
+}
+
+.landing-header {
+	text-align: center;
+	color: $light-text;
+}
+
+.landing-list {
+	text-align: center;
+	color: $light-text;
+	list-style-type: none;
+}
+
+#project-header {
+	text-align: center;
+	margin: 50px 0px;
+}
+
+#projects {
+
+}
+
+.project {
+	height: 300px;
+
+	border-top: 1px solid $accent-color;
+}
+
+.project-image {
+	height: 100%;
+}
+
+#about {
+	width: 100%;
+
+	background-color: $accent-color;
+	color: $light-text;
+
+	// To prevent the header margin from pushing the whole div down
+	overflow: hidden;
+}
+
+#about-header {
+	text-align: center;
+	margin: 35px 0px;
+}
+
+.about-content {
+	margin-bottom: 40px;
+	padding: 0px 40px;
+	text-indent: 12px;
+	line-height: 20pt;
+}
+
+#footer {
+	height: 50px;
+
+	background-color: #555555;
+}
