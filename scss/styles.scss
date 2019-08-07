@@ -2,7 +2,7 @@ $primary-font: 'Montserrat', sans-serif;
 
 $accent-color: #008090;
 $accent-color-bright: #00A0B0;
-$light-text: rgba(255, 255, 255, 0.85);
+$light-text: #EFEFEF;
 $dark-text: rgba(55, 55, 55, 0.85);
 
 $logo-size: 100px;
@@ -180,6 +180,7 @@ a {
 }
 
 .project-image {
+	text-align: center;
 	height: 100%;
 
 	img {
@@ -262,10 +263,6 @@ a {
 		color: $light-text;
 		font-weight: 600;
 	}
-}
-
-.project-image {
-	text-align: center;
 }
 
 #about {
